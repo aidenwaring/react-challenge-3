@@ -1,12 +1,18 @@
 import React from "react"
 
-export default (): JSX.Element => {
-  let name: string = "Aiden"
-  
+interface Person {
+  name: string
+  age: number
+}
+
+export default ({name, age}: Person): JSX.Element => {
+
   return (
     <>
       <header>
-        <h1>Welcome To The Profile of {name}</h1>
+        <h1>
+          Welcome to the profile of {name}, who is {age}.
+        </h1>
         <nav>
           <ul>
             <li>

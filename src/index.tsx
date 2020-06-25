@@ -9,7 +9,10 @@ import "./index.css"
 
 ReactDOM.render(
   <div>
-    <Header />
+    <Header 
+      name="Aiden Waring"
+      age={24}
+    />
     <AboutMe />
     <FavouriteFoods />
     <ContactMe />
